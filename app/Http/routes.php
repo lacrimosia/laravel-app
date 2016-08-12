@@ -18,6 +18,8 @@ Route::get('/', 'PagesController@home');
 // show all cards
 Route::get('cards', 'CardsController@index');
 
+Route::get('cards/{card}', 'CardsController@show');
+
 // create new cards
 //Route::get('cards/create', 'CardsController@create');
 
